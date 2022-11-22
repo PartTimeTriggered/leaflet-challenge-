@@ -86,14 +86,14 @@ legend.onAdd = function() {
 function createMap(earthquakes) {
    
     // Define layers
-   let streetstylemap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+   let streetstylemap = L.tileLayer("https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&v=weekly", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 20,
     id: "outdoors-v11",
     accessToken: API_KEY
   })
 
-  let graymap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+  let graymap = L.tileLayer("https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&v=weekly", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 20,
     id: "light-v10",
